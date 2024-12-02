@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dbautomation
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create # Pode ser 'none', 'update', 'create', ou 'create-drop'
+    show-sql: true # Exibe as queries SQL no log
+    properties:
+      hibernate:
+        format_sql: true # Formata as queries SQL no log
